@@ -14,3 +14,11 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+var Turbolinks = require("turbolinks")
+Turbolinks.start()
+
+
+$(function() {
+    $('.banner2').unslider();
+});
