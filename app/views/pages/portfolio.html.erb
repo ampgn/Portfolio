@@ -1,6 +1,52 @@
+
 <%= render 'shared/navbar' %>
-<% @pages.each do |page| %>
-    <%= page.title %>
-    <%= page.description %>
-<% end %>
+
+<div class="container" style="margin-top: 50px" >
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="cards">
+            <% @pages.each do |page| %>
+                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+                </div>
+                <div class="title">
+                    <%= page.title %>
+                </div>
+                <div class="description">
+                    <p><%= page.description %></p>
+                </div>
+            <% end %>
+            </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="cards">
+        <% @pages.each do |page| %>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+            </div>
+            <div class="title">
+                <%= page.title %>
+            </div>
+            <div class="description">
+                <p><%= page.description %></p>
+            </div>
+        <% end %>
+        </div>
+        </div>
+        
+        <div class="col-sm-4">
+        <div class="cards">
+        <% @pages.each do |page| %>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+            </div>
+            <div class="title">
+                <%= page.title %>
+            </div>
+            <div class="description">
+                <p><%= page.description %></p>
+            </div>
+        <% end %>
+        </div>
+        </div>
+    </div>
+</div>
+
 <%= render 'shared/footer' %>

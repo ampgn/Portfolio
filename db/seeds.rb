@@ -5,6 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-portfolio1 = Page.create(title: 'Food-Trotter', description: 'Si pour vous voyager rime avec découverte culinaire, vous allez adorer Food Trotter 🍣 🍕
-La nouvelle app qui vous donnera toutes les infos sur les spécialités locales et les meilleurs restos où les consommer #EatingisVisting')
+portfolio1 = Page.create(title: 'Food-Trotter', description: 'Food Trotter, la nouvelle app qui vous donne toutes les infos sur les spécialités locales. #EatingisVisting')
 portfolio2 = Page.create(title: 'Barbhack', description: 'Barbhack est une conférence, des ateliers, un CTF de hacking !')
+portfolio3 = Page.create(title: 'Gaya', description: 'Gaya est une application qui rescense toutes les actions Green dans la région Aix-Marseille !')

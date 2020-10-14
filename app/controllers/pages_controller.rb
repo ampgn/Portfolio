@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     def welcome
     end
 
-    def index
+    def portfolio
         @pages = Page.all
     end
 end

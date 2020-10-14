@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get 'pages' => 'pages#welcome'
+  get 'pages' => 'pages#welcome' 
   root 'pages#welcome'
-  get 'pages' => 'pages#index', as: 'portfolio'
+  get 'portfolio' => 'pages#portfolio', as: 'portfolio'
 end
