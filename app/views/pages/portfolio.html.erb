@@ -1,17 +1,8 @@
 
 <%= render 'shared/navbar' %>
 
-<div class="banner2">
-    <ul>
-        <li>This is a slide.</li>
-        <li>This is another slide.</li>
-        <li>This is a final slide.</li>
-    </ul>
-</div>
-
-
 <div class="container" style="margin-top: 50px" >
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-sm-4">
             <div class="cards">
             <% @pages.each do |page| %>
@@ -41,20 +32,7 @@
         </div>
         </div>
         
-        <div class="col-sm-4">
-        <div class="cards">
-        <% @pages.each do |page| %>
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-            </div>
-            <div class="title">
-                <%= page.title %>
-            </div>
-            <div class="description">
-                <p><%= page.description %></p>
-            </div>
-        <% end %>
-        </div>
-        </div>
+
     </div>
 </div>
 
