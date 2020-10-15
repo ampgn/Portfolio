@@ -9,6 +9,9 @@
     color: rgba(0,0,0,0.3);
 }
 
+.footer-copyright {
+  color: #d0826f;
+}
 .footer-copyright:hover {
   color: black;
 }
@@ -19,8 +22,8 @@
   align-items: center;
 }
 .footer-links a {
-  color: black;
-  opacity: 0.15;
+  color: #d0826f;
+  opacity: 1;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
