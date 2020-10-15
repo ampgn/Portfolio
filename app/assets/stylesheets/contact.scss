@@ -1,26 +1,26 @@
 .h2contact {
     display: block;
     font-size: 2.222em;
-    font-family: 'bold';
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    opacity: 0.90;
     line-height: 140%;
-    margin-block-start: 2em;
+    margin-block-start: 3em;
     margin-block-end: 0.83em;
     margin-inline-end: 0px;
     text-align: center;
+    
 }
-
-
 
 .footer-links2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block-end: 100px;
+    margin-block-end: 140px;
     margin-block-start: 60px;
   }
 
   .a-mail {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -31,7 +31,6 @@
   }
 
   .a-github {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -42,7 +41,6 @@
   }
 
   .a-instagram {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -53,7 +51,6 @@
   }
 
   .a-instagram {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -64,7 +61,6 @@
   }
 
   .a-instagram {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -75,7 +71,6 @@
   }
 
   .a-instagram {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -86,7 +81,6 @@
   }
 
   .a-twitter {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -97,7 +91,6 @@
   }
 
   .a-linkedin {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -108,7 +101,6 @@
   }
 
   .a-facebook {
-    color: black;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
@@ -119,8 +111,8 @@
   }
 
   .footer-links2 a {
-    color: black;
-    opacity: 0.15;
+    color: #d0826f;
+    opacity: 0.70;
     text-decoration: none;
     font-size: 50px;
     padding: 0px 10px;
