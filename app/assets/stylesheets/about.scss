@@ -35,6 +35,23 @@
     font-size: 18px;
 }
 
+.content figure img {
+    display: inline-block;
+}
+.content figure {
+    text-align: center;
+}
+
+.icon-skill {
+    height: 48px;
+    width: auto;
+    max-width: 100%;
+    margin-left: 153px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    fill: #d0826f;
+}
+
 .h1skill {
     font-family: 'Source Serif Pro', serif;
     font-weight: 600;
@@ -65,8 +82,7 @@
 }
 
 .skills2 {
-    background-color: #fffcfc;
     border-radius: 15px;
-    box-shadow: 1px 1px 1px #d0826f;
+    box-shadow: 0.5px 0.5px 0.5px #d0826f;
     margin-bottom: 80px;
 }
