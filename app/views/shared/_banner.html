@@ -1,8 +1,68 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png); height: 470px;">
-    <div class="container">
-      <h1>Hello. My name is <strong>Annie Puygrenier</strong> and I have creative  ideas and build websites!</h1>
-      <p>I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
-      <a class="btn btn-danger view" style="float: right;" href="./portfolio">View my Work</a>
-    </div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/assets/welcome3.jpg); height: 505px;">
+  <div class="container">
+      <!-- Hero Unit -->
+    <section class="hero-unit">
+      <div class="row">
+       
+          <hgroup>
+            <h1>Hello, my name is <strong>Annie Puygrenier</strong> and I have creative ideas.</h1>
+            <p>I build websites and ios mobile apps. Let's buid something amazing ! </p>
+          </hgroup>
+
+          <ul class="small-block-grid-2 medium-block-grid-3 flip-cards">
+
+            <li ontouchstart="this.classList.toggle('hover');">
+              <div class="large button card-front">
+                <a href="#">About</a>
+                <i class="fa fa-user card-icon "></i>
+              </div>
+              <div class="panel card-back">
+                <i class="fa fa-user card-icon"></i>
+                <div class="hub-info">
+                  <a href="./about">Curios</a>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+
+            <li ontouchstart="this.classList.toggle('hover');">
+              <div class="large button card-front">
+                <a href="#">Portfolio</a>
+                <i class="fa fa-briefcase card-icon"></i>
+              </div>
+
+              <div class="panel card-back">
+                <i class="fa fa-briefcase card-icon"></i>
+                <div class="hub-info">
+                  <a href="./portfolio">Portfolio</a>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+
+            <li ontouchstart="this.classList.toggle('hover');">
+              <div class="large button card-front">
+                <a href="#">Contact</a>
+                <i class="fa fa-address-card card-icon"></i>
+              </div>
+
+              <div class="panel card-back">
+                <i class="fa fa-address-card card-icon"></i>
+                <div class="hub-info">
+                  <a href="./contact">Contact</a>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="large-12 columns">
+          <div class="small-12 small-centered medium-6 medium-centered large-3 large-centered columns clients">
+          </div>
+          <!-- end .clients -->
+      </div>
+    </section>
   </div>
+</div>
   
