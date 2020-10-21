@@ -1,43 +1,46 @@
 .banner2 { position: relative; overflow: auto; }
-    .banner2 li { list-style: none; }
-        .banner2 ul li { float: left; }
+  .banner2 li { list-style: none; }
+      .banner2 ul li { float: left; }
 
 .card-category {
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    clear: both;
-    max-width: 1040px;
-    margin: 0 auto;
-  }
-  
-  .title {
-    clear: both;
-    max-width: 1040px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  clear: both;
+  max-width: 1040px;
+  margin: 0 auto;
+}
 
-  .description {
-    clear: both;
-    max-width: 1040px;
-    margin: 0 0 50px;
-  }
-  .description p {
-    font-family: 'serif';
-    font-weight: lighter;
-    opacity: 0.70;
-    line-height: normal;
-    font-size: 17px;
-  }
+.title {
+  clear: both;
+  max-width: 1040px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  clear: both;
+  max-width: 1040px;
+  margin: 0 0 50px;
+}
+.description p {
+  font-family: 'serif';
+  font-weight: lighter;
+  opacity: 0.70;
+  line-height: normal;
+  font-size: 17px;
+}
+
+
+  
