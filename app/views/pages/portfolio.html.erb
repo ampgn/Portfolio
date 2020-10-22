@@ -2,24 +2,28 @@
 <%= render 'shared/navbar' %>
 
 <div class="container" style="margin-top: 50px" >
-    <div class="row justify-content-center">
-        <% @pages.each do |page| %>
-            <div class="col-sm-4">
-                <div class="cards">
-                    <a class="cards"><%= link_to (@page) do %></a>                 
-                        <div class="card-category" style="background-image: url(/assets/bassmusic.png)">
-                        </div>
-                        <div class="title">
-                            <%= page.title %>
-                        </div>
-                        <div class="description">
-                            <p><%= page.description %></p>
-                        </div>
-                    <% end %>
+    
+    <% @pages.each_slice(2) do |n| %>
+        <div class="row justify-content-center">
+        <% n.each do |page| %>
+                <div class="col-sm-4">
+                    <div class="cards">
+                        <a class="cards"><%= link_to (@page) do %></a>                 
+                            <div class="card-category" style="background-image: url(/assets/bassmusic.png)">
+                            </div>
+                            <div class="title">
+                                <%= page.title %>
+                            </div>
+                            <div class="description">
+                                <p><%= page.description %></p>
+                            </div>
+                        <% end %>
+                    </div>
                 </div>
-            </div>
-        <% end %>
-    </div>
+            <% end %>
+        </div>
+    <% end %>
+    
 </div>
 
 <%= render 'shared/footer' %>
