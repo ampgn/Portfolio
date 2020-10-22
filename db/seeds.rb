@@ -8,10 +8,14 @@
 
 foottrotter = Page.create(title: 'Food-Trotter', description: 'Food Trotter, la nouvelle app qui vous donne toutes les infos sur les spécialités locales. #EatingisVisting')
 
+
 barbhack = Page.create(title: 'Barbhack', description: 'Barbhack est une conférence, des ateliers, un CTF de hacking !')
+
 
 gaya = Page.create(title: 'Gaya', description: 'Gaya est une application qui rescense toutes les actions Green dans la région Aix-Marseille !')
 
+
 bassmusic = Page.create(title: 'Bass-Music', description: 'Bass wants a Rails app for their music streaming service. Albums are displayed on the main page!')
+
 
 stories = Page.create(title: 'Stories', description: 'Stories is making a landing page for their upcoming travel journal app!')
