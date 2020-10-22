@@ -19,4 +19,9 @@ class PagesController < ApplicationController
 
     def contact
     end
+
+    private
+    def page_params
+        params.require(:page).permit(:title, :description, :image)
+    end
 end
