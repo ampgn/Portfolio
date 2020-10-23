@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'home' => 'pages#home'
   get 'welcome' => 'pages#welcome', as: 'welcome'
-  get 'pages/:id' => 'pages#show', as: 'show'
+  get 'show/:id' => 'pages#show' , as: 'show'
   get 'portfolio' => 'pages#portfolio', as: 'portfolio'
   get 'about' => 'pages#about', as: 'about'
   get 'contact' => 'pages#contact', as: 'contact'

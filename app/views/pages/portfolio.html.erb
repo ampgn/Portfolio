@@ -8,16 +8,17 @@
         <% n.each do |page| %>
                 <div class="col-sm-4">
                     <div class="cards">
-                        <a class="cards"><%= link_to (@page) do %></a>                 
-                            <div class="card-category" style="background-image: url(<%= page.image %>)">
-                            </div>
-                            <div class="title">
-                                <%= page.title %>
-                            </div>
-                            <div class="description">
-                                <p><%= page.description %></p>
-                            </div>
-                        <% end %>
+                        <a>
+                            <%= link_to show_path(page) do %>
+                                <div class="card-category" style="background-image: url(<%= page.image %>)"></div>
+                            <% end %>
+                        </a>
+                        <div class="title">
+                            <%= page.title %>
+                        </div>
+                        <div class="description">
+                            <p><%= page.description %></p>
+                        </div>
                     </div>
                 </div>
             <% end %>
