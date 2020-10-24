@@ -16,18 +16,13 @@ a:hover {
 .hero-unit h1 {
     font-weight: bold;
 }
-.hero-unit hgroup {
-    margin: 3rem 0;
-}
+
 .hero-unit .card-icon { /* front of card */
     display: block;
-    margin: 0.5rem auto 0;
     font-size: 2rem;
     color: white;
 }
-.hero-unit .clients {
-    margin: 2rem auto;
-}
+
 .hero-unit .clients a {
     color: white;
 }
@@ -260,9 +255,9 @@ a:hover {
         padding: 5px 0 20px 5px;
     }
     .flip-cards li {
-        width: 100%;
+        width: 70%;
         font-size: 1.35rem;
-        height: 120px;
+        height: 140px;
     }
     .flip-cards .panel p {
         display: none;	
