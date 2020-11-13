@@ -58,4 +58,13 @@
   margin-bottom: 80px;
   letter-spacing: 5px;
 }
-  
+
+.nav-pills .nav-link {
+  border-radius: 0.25rem;
+  color: #d28470;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #d28470 !important;
+}
