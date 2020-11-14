@@ -7,13 +7,13 @@ $(document).ready(function() {
 	// Highlight the top nav as scrolling occurs. /bootstrap/
     $('body').scrollspy({ 
         target: '#navbar_1',
-        offset: 80
+        offset: 120
     });
 
 	 // Menu scroll to section
     $('.scrollto').click(function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top - 40  }, 1500);
+        $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top - 120  }, 1500);
         event.preventDefault();
     });
 	
@@ -31,50 +31,51 @@ $(document).ready(function() {
 
 
 
-<div class="container">
 
-    <!-- navbar-collapse -->
-    <nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
-        <a class="navbar-brand" href="#">        
-            <%= link_to root_path, class: "logo" do %>
-                <%= image_tag "/assets/logo.png"%>
-            <% end %>
-        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- navbar-collapse -->
+<nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
+    <a class="navbar-brand" href="#">        
+        <%= link_to root_path, class: "logo" do %>
+            <%= image_tag "/assets/logo.png"%>
+        <% end %>
+    </a>
 
-        <div class="collapse navbar-collapse" id="main_nav">
-        <ul class="nav nav-pills ml-auto">
-            <li class="nav-item"><a href="#welcome" class="scrollto nav-link active"> Welcome</a></li>
-            <li class="nav-item"><a href="#about" class="scrollto nav-link"> About</a></li>
-            <li class="nav-item"><a href="#portfolio" class="scrollto nav-link"> Portfolio </a></li>
-            <li class="nav-item"><a href="#contact" class="scrollto nav-link"> Contact</a></li>
-        </ul>
-        </div> 
-    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main_nav">
+    <ul class="nav nav-pills ml-auto">
+        <li class="nav-item"><a href="#welcome" class="scrollto nav-link active"> Welcome</a></li>
+        <li class="nav-item"><a href="#about" class="scrollto nav-link" > About</a></li>
+        <li class="nav-item"><a href="#portfolio" class="scrollto nav-link"> Portfolio </a></li>
+        <li class="nav-item"><a href="#contact" class="scrollto nav-link"> Contact</a></li>
+    </ul>
+    </div> 
+</nav>
+
+
 
     <!-- SECTION CONTENT -->
     <section class="section-content py-5">
             
         <article id="welcome">
-            <div class="card-category">
-                <img src="/assets/ipad.png"/>
-            </div>
+            <img src="/assets/port.jpg" style="background-size: cover;   background-position: center; padding-bottom: 80px; width: 100%;"/>
         </article>
 
-
-        <hr>
-
+<div class="container">
         <article id="about">
         <div class="container">
+            <div> 
+                <h1 class="h1portfolio" href="./welcome">About Me</h1>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-md-4 col-12 about">
                     <img src="/assets/0.jpeg" class="img-fluid"/>
                 </div>
                 <div class="col-md-5 col-12 about">
-                    <h1>About me</h1>
+                    <!-- <h1>About me</h1>-->
                     <p class="intro">I'm a full-stack web / mobile junior developer
                     <br>
                     based in Aix-en-Provence, France. </p>
@@ -99,9 +100,9 @@ $(document).ready(function() {
                         <p class="p1-skill">Dev Tools Back:</p>  
                         <li class="li-skill">Ruby</li>
                         <li class="li-skill">Ruby on rails</li>
+                        <li class="li-skill">Javascript</li>
                         <li class="li-skill">Github</li>
                         <li class="li-skill">Gitlab</li>
-                        <li class="li-skill">Terminal</li>
                     </figure>
                 </div>
 
@@ -141,13 +142,11 @@ $(document).ready(function() {
         </article>
 
 
-        <hr>
-
         <article id="portfolio">
         <div class="container" style="margin-top: 40px" >
 
             <div> 
-                <h1 class="h1portfolio" href="./welcome">PORTFOLIO</h1>
+                <h1 class="h1portfolio" href="./welcome">Portfolio</h1>
             </div>
             
             <% @pages.each_slice(2) do |n| %>
@@ -177,10 +176,11 @@ $(document).ready(function() {
         </article>
 
 
-        <hr>
-
         <article id="contact">
         <div class="container">
+            <div> 
+                <h1 class="h1portfolio" href="./welcome">Contact</h1>
+            </div>
             <div class="h2contact">
                 <h2>Let's make something <br> great and beautiful!</h2>
             </div>
