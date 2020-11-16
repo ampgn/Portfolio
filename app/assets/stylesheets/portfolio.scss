@@ -51,7 +51,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: large;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   letter-spacing: 5px;
 }
 
@@ -69,3 +69,9 @@
   margin-bottom: 100px;
 }
 
+.email {
+  color: #d28470;
+}
+.email:hover {
+  color:#c4c4c4;
+}
