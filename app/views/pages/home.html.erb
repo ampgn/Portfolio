@@ -1,14 +1,29 @@
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
 <div class="container home">
     <div class="logo" style="text-align: center;">
         <%= link_to root_path, class: "navbar-brand" do %>
             <%= image_tag "/assets/logo.png" %>
         <% end %>
         <div class="animationhome" href="./portfolio"></div>
-        <h1 class="h1home">Hi, i'm Annie Puygrenier</h1>
-        <h2 class="h2home">I'm a full-stack web developer</h2>
-        <a class="btn btn-outline-light" id="buttonhome" href="./portfolio">View my work</a>
+
+        <span id="typed"></span>
+        <script>
+            var options = {
+                strings: ["Hi, i'm Annie Puygrenier", "I'm a full-stack web developer"],
+                typeSpeed: 50,
+                loop: true
+            }
+            var typed = new Typed("#typed", options);
+        </script>
+    </div>
+    <div class="col text-center">
+        <a class="btn btn-outline-light" id="buttonhome" href="./portfolio" style="text-align: center;">View my work</a>
     </div>
 </div>
+
+
+
 
 
 
