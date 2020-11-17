@@ -8,8 +8,9 @@
   height: 72px;
   width: 72px;
   border-radius: 50%;
-  margin-top: 220px;
-  margin-bottom: 40px;
+  margin-bottom: 1px;
+  margin-top: 35vh;
+  transform: translateY(-35%);
 }
 
 /*<h1 class="h1home">Hi, i'm Annie Puygrenier</h1>
@@ -17,7 +18,7 @@
 .h1home {
   font-family: 'Cormorant Garamond', serif;
   font-size: large;
-  color: #91612f;
+  color: #e96e58;
   font-weight: 600;
   font-size: 50px;
   letter-spacing: 5px;
@@ -29,9 +30,9 @@
 }*/
 
 #buttonhome {
-  color: #91612f;
+  color: #d9492f;
   opacity: 0.70;
-  border-color: #d78a49;
+  border-color: #d09263;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   font-size: small;
@@ -41,16 +42,20 @@
   background-color: #fefcf7;
 }
 
-
 #typed {
   font-family: 'Cormorant Garamond', serif;
   font-size: large;
   padding-bottom: 30px;
-  color: #d78a49;
+  color: #d09263;
   font-weight: 600;
   font-size: 30px;
 }
 
+.home {
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle !important;
+}
 
 
 
