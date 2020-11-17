@@ -4,6 +4,13 @@
   border-radius: 50%;
 }
 
+.logobis img{
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  margin-top: 250px;
+  margin-bottom: 40px;
+}
 
 /*<h1 class="h1home">Hi, i'm Annie Puygrenier</h1>
 <h2 class="h2home">I'm a full-stack web developer</h2>*/
@@ -23,17 +30,19 @@
   border-color: gray;
   font-family: 'Cormorant Garamond', serif;
   font-size: small;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 #typed {
   font-family: 'Cormorant Garamond', serif;
   font-size: large;
-  
+  padding-bottom: 30px;
 }
 
 
-
+.home {
+  background-color: #da9471;
+}
 //$anime-time: 8s;
 
 //$box-size: 300px;
