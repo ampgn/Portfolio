@@ -14,7 +14,7 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 2px;
+  border-radius: 3px;
   clear: both;
   max-width: 1050px;
   margin: 0 auto;
@@ -93,7 +93,6 @@
 figure {
   display: flex;
   flex-flow: column;
-  padding: 5px;
   margin: auto;
 }
 
@@ -155,6 +154,7 @@ figure {
   transition-delay: 0.1s;
   overflow-y: auto;
   transition: margin-bottom .1s ease-out;
+  margin: -10px;
 }
 
 .hover-img:hover:before,

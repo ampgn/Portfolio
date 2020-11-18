@@ -54,8 +54,6 @@ $(document).ready(function() {
 </nav>
 
 
-
-
     <!-- SECTION CONTENT -->
     <section class="section-content py-5">
             
@@ -156,16 +154,16 @@ $(document).ready(function() {
                             <div class="cards">
                                 <a>
                                     <%= link_to show_path(page) do %>
-                                    <figure class="hover-img">
-                                        <div class="card-category" style="background-image: url(<%= page.image %>)"></div>
+                                        <figure class="hover-img">
+                                            <div class="card-category" style="background-image: url(<%= page.image %>)"></div>
                                     <% end %>
-                                <a>
-                                <%= link_to show_path(page), class:"title" do %>
-                                <div class="title">
-                                    <figcaption class=""><%= page.title %></figcaption>
-                                </div>
-                                <% end %>
-                                </figure>
+                                </a>
+                                    <%= link_to show_path(page), class:"title" do %>
+                                        <div class="title">
+                                            <figcaption class=""><%= page.title %><figcaption>
+                                        </div>
+                                    <% end %>
+                                        </figure>
                                 <!--<div class="description">
                                     <p><%= page.description %></p>
                                 </div>-->

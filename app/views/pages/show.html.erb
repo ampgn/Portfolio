@@ -1,4 +1,78 @@
-<%= render 'shared/navbar' %>
+<script type="text/javascript">
+
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+
+	// Highlight the top nav as scrolling occurs. /bootstrap/
+    $('body').scrollspy({ 
+        target: '#navbar_1',
+        offset: 120
+    });
+
+	 // Menu scroll to section
+    $('.scrollto').click(function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top - 120  }, 1500);
+        event.preventDefault();
+    });
+	
+	// for small screen
+    if ($(window).width() < 992) {
+
+		// Closes the Responsive Menu on Menu Item Click
+	    $('.navbar-collapse a.scrollto').click(function() {
+	        $('.navbar-toggler:visible').click();
+	    });
+	}
+    
+}); // jquery end
+</script>
+
+
+<!-- navbar-collapse -->
+<div>
+<nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
+    <a class="navbar-brand" href="#">        
+        <%= link_to root_path, class: "logo" do %>
+            <%= image_tag "/assets/logo.png"%>
+        <% end %>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main_nav">
+    <ul class="nav nav-pills ml-auto">
+        <li class="nav-item"><a href="portfolio" class="scrollto nav-link active"> Welcome</a></li>
+        <li class="nav-item"><a href="portfolio" class="scrollto nav-link" > About</a></li>
+        <li class="nav-item"><a href="portfolio" class="scrollto nav-link"> Portfolio </a></li>
+        <li class="nav-item"><a href="portfolio" class="scrollto nav-link"> Contact</a></li>
+    </ul>
+    </div> 
+</nav>
+
+
+    <!-- SECTION CONTENT -->
+    <section class="section-content py-5">
+            
+        <article id="welcome">
+        </article>
+
+<div class="container">
+        <article id="about">
+        </article>
+
+        <article id="portfolio" style="margin-bottom: 120px">
+        </article>
+
+        <article id="contact">
+        </article>
+
+    </section>
+</div>
+
 
 <div class="container show">
     <div class="col-sm-4">
