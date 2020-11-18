@@ -156,15 +156,19 @@ $(document).ready(function() {
                             <div class="cards">
                                 <a>
                                     <%= link_to show_path(page) do %>
+                                    <figure class="hover-img">
                                         <div class="card-category" style="background-image: url(<%= page.image %>)"></div>
                                     <% end %>
-                                </a>
+                                <a>
+                                <%= link_to show_path(page), class:"title" do %>
                                 <div class="title">
-                                    <%= page.title %>
+                                    <figcaption class=""><%= page.title %></figcaption>
                                 </div>
-                                <div class="description">
+                                <% end %>
+                                </figure>
+                                <!--<div class="description">
                                     <p><%= page.description %></p>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     <% end %>
@@ -174,7 +178,6 @@ $(document).ready(function() {
         </div>
 
         </article>
-
 
         <article id="contact">
         <div class="container">
@@ -200,7 +203,6 @@ $(document).ready(function() {
         </article>
 
     </section>
-
 </div>
 
 <%= render 'shared/footer' %>
