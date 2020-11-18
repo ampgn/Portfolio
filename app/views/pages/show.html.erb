@@ -48,14 +48,13 @@ $(document).ready(function() {
         <li class="nav-item"><a href="portfolio" class="scrollto nav-link active"> Welcome</a></li>
         <li class="nav-item"><a href="portfolio" class="scrollto nav-link" > About</a></li>
         <li class="nav-item"><a href="portfolio" class="scrollto nav-link"> Portfolio </a></li>
-        <li class="nav-item"><a href="portfolio" class="scrollto nav-link"> Contact</a></li>
+        <li class="nav-item"><a href="#portfolio" class="scrollto nav-link"> Contact</a></li>
     </ul>
     </div> 
 </nav>
 
 
     <!-- SECTION CONTENT -->
-    <section class="section-content py-5">
             
         <article id="welcome">
         </article>
@@ -69,21 +68,17 @@ $(document).ready(function() {
 
         <article id="contact">
         </article>
-
-    </section>
 </div>
 
 
 <div class="container show">
-    <div class="col-sm-4">
+    <div class="">
+        <div class="title1"><%= @page.title %></div>
+        <div class="showpresentation">presentation | user journey</div>
         <div class="cards1">        
             <div class="card-category1" style="background-image: url(<%= @page.image %>)"></div>
         </div>
-    </div>
-
-    <div class="col-sm-8">
-        <div class="title1"><%= @page.title %></div>
-        <div class="description1"><p><%= @page.description %></p></div>
+        <div class=" description1"><p><%= @page.description %></p></div>
     </div>
 </div>
 
