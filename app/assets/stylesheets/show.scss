@@ -21,9 +21,30 @@
     clear: both;
     max-width: 100%;
     width: 810px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+
+.card-category2 {
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    clear: both;
+    max-width: 100%;
+    width: 420px;
     margin-bottom: 50px;
     margin-left: 150px;
 }
+
 
 .title1 {
     clear: both;
