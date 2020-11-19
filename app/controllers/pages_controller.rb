@@ -22,6 +22,6 @@ class PagesController < ApplicationController
 
     private
     def page_params
-        params.require(:page).permit(:title, :description, :image, :sub_title)
+        params.require(:page).permit(:title, :description, :image, :sub_title, :photo, :photo_avatar, :photo_app)
     end
 end

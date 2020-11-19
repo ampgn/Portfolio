@@ -81,9 +81,19 @@ $(document).ready(function() {
         </div>
 
         <div class="description1"><p><%= @page.description %></p></div>
-                
-        <div class="cards2">        
-            <div class="card-category2" style="background-image: url(<%= @page.sub_title %>)"></div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cards2">        
+                        <div class="card-category2" style="background-image: url(<%= @page.sub_title %>)"></div>
+                        <div class="card-category2" style="background-image: url(<%= @page.photo %>)"></div>
+                    
+                        <div class="card-category2" style="background-image: url(<%= @page.photo_avatar %>)"></div>
+                        <div class="card-category2" style="background-image: url(<%= @page.photo_app %>)"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
