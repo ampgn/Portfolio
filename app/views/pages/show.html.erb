@@ -1,33 +1,4 @@
-<script type="text/javascript">
 
-// jquery ready start
-$(document).ready(function() {
-	// jQuery code
-
-	// Highlight the top nav as scrolling occurs. /bootstrap/
-    $('body').scrollspy({ 
-        target: '#navbar_1',
-        offset: 120
-    });
-
-	 // Menu scroll to section
-    $('.scrollto').click(function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top - 120  }, 1500);
-        event.preventDefault();
-    });
-	
-	// for small screen
-    if ($(window).width() < 992) {
-
-		// Closes the Responsive Menu on Menu Item Click
-	    $('.navbar-collapse a.scrollto').click(function() {
-	        $('.navbar-toggler:visible').click();
-	    });
-	}
-    
-}); // jquery end
-</script>
 
 
 <!-- navbar-collapse -->
@@ -45,10 +16,18 @@ $(document).ready(function() {
 
     <div class="collapse navbar-collapse" id="main_nav">
     <ul class="nav nav-pills ml-auto">
-        <li class="nav-item"><a href="portfolio" class="scrollto nav-link active"> Welcome</a></li>
-        <li class="nav-item"><a href="portfolio" class="scrollto nav-link" > About</a></li>
-        <li class="nav-item"><a href="portfolio" class="scrollto nav-link"> Portfolio </a></li>
-        <li class="nav-item"><a href="#portfolio" class="scrollto nav-link"> Contact</a></li>
+        <li class="nav-item">
+            <%= link_to "Welcome", portfolio_path, class: "scrollto nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "About", portfolio_path, class: "scrollto nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Portfolio", portfolio_path, class: "scrollto nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Contact", portfolio_path, class: "scrollto nav-link" %>
+        </li>
     </ul>
     </div> 
 </nav>
@@ -73,14 +52,20 @@ $(document).ready(function() {
 
 <div class="container show">
     <div class="">
-        <div class="title1"><%= @page.title %></div>
-        <div class="showpresentation">presentation | user journey</div>
-
-        <div class="row justify-content-center cards1">        
-            <div class="col-9  card-category1" style="background-image: url(<%= @page.image %>)"></div>
+        <div class="row justify-content-left cards1">
+            <div class="title1"><%= @page.title %></div>
+        </div>
+        <div class="row justify-content-left cards1">
+            <div class="showpresentation">presentation | user journey</div>
         </div>
 
-        <div class="description1"><p><%= @page.description %></p></div>
+        <div class="row justify-content-center cards1">        
+            <div class="col-9 card-category1" style="background-image: url(<%= @page.image %>)"></div>
+        </div>
+
+        <div class="row justify-content-center">  
+            <div class="col-9 description1"><p><%= @page.description %></p></div>
+        </div>
         
         <div class="container">
             <div class="row justify-content-center">
