@@ -170,3 +170,27 @@ figure {
 .hover-img:hover figcaption {
   opacity: 0.8;
 }
+
+.h1contact {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 20vh;
+  transform: translateY(-20%);
+}
+
+.hrbis {
+  margin: 0 !important;
+  max-width: 7% !important;
+  height: 2px;
+  border-color: #d28470;
+  background-color: #d28470;
+}
+
+.showpresentationter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: small;
+  text-align: left;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
