@@ -15,20 +15,22 @@
 .card-category2 {
     background-size: cover;
     background-position: center;
-    height: 720px;
     justify-content: center;
+    text-align: center;
     align-items: center;
     color: white;
     font-size: 24px;
     font-weight: bold;
+    clear: both;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.img-grid-border {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    clear: both;
-    max-width: 100%;
-    margin-bottom: 60px;
 }
-
 
 .title1 {
     clear: both;
@@ -51,6 +53,7 @@
     opacity: 0.70;
     line-height: normal;
     font-size: 18px;
+    margin-bottom: 0 !important;
 }
 
 .showpresentation {
@@ -80,7 +83,9 @@
     text-decoration: none;
     background-color: transparent;
 }
-
+.showpresentationbis a:hover {
+    color: #d28470;
+}
 
 .hr {
     margin-top: 20px;
