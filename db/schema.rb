@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_21_191126) do
+ActiveRecord::Schema.define(version: 2020_11_22_154924) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2020_11_21_191126) do
     t.string "photo_avatar"
     t.string "photo_app"
     t.string "github_url"
+    t.string "hashtag"
   end
 
 end
