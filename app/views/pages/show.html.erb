@@ -1,6 +1,4 @@
 
-
-
 <!-- navbar-collapse -->
 <div>
 <nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
@@ -16,18 +14,10 @@
 
     <div class="collapse navbar-collapse" id="main_nav">
     <ul class="nav nav-pills ml-auto">
-        <li class="nav-item">
-            <%= link_to "Welcome", portfolio_path, class: "scrollto nav-link" %>
-        </li>
-        <li class="nav-item">
-            <%= link_to "About", portfolio_path, class: "scrollto nav-link" %>
-        </li>
-        <li class="nav-item">
-            <%= link_to "Portfolio", portfolio_path, class: "scrollto nav-link" %>
-        </li>
-        <li class="nav-item">
-            <%= link_to "Contact", portfolio_path, class: "scrollto nav-link" %>
-        </li>
+        <li class="nav-item"><a href="/portfolio#welcome" class="scrollto nav-link">Welcome</a></li>
+        <li class="nav-item"><a href="/portfolio#about" class="scrollto nav-link" >About</a></li>
+        <li class="nav-item"><a href="/portfolio#portfolio" class="scrollto nav-link">Portfolio </a></li>
+        <li class="nav-item"><a href="/portfolio#contact" class="scrollto nav-link">Contact</a></li>
     </ul>
     </div> 
 </nav>
@@ -35,10 +25,10 @@
 
     <!-- SECTION CONTENT -->
             
+<div class="container">
         <article id="welcome">
         </article>
 
-<div class="container">
         <article id="about">
         </article>
 
@@ -80,26 +70,26 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-5">        
-                <div class="card-category2" style="text-align: right;">
+                <div class="card-category2" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal" style="text-align: right;">
                     <img class="img-fluid img-grid-border" src="<%= @page.sub_title %>"/>
                 </div>
             </div>
             
             <div class="col-5"> 
-                <div class="card-category2" style="text-align:left">
+                <div class="card-category2" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal" style="text-align:left">
                     <img class="img-fluid img-grid-border" src="<%= @page.photo %>"/>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">  
             <div class="col-5">  
-                <div class="card-category2" style="text-align: right;">
+                <div class="card-category2" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal" style="text-align: right;">
                     <img class="img-fluid img-grid-border" src="<%= @page.photo_avatar %>"/>
                 </div>
             </div>
             
             <div class="col-5"> 
-                <div class="card-category2" style="text-align: left;">
+                <div class="card-category2" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal" style="text-align: left;">
                     <img class="img-fluid img-grid-border" src="<%= @page.photo_app %>"/>
                 </div>
             </div>

@@ -7,7 +7,7 @@ $(document).ready(function() {
 	// Highlight the top nav as scrolling occurs. /bootstrap/
     $('body').scrollspy({ 
         target: '#navbar_1',
-        offset: 120
+        offset: 300
     });
 
 	 // Menu scroll to section
@@ -151,7 +151,7 @@ $(document).ready(function() {
                 <div class="row justify-content-center">
                 <% n.each do |page| %>
                         <div class="col-sm-4">
-                            <div class="cards">
+                            <div class="cards" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal">
                                 <a>
                                     <%= link_to show_path(page) do %>
                                         <figure class="hover-img">
