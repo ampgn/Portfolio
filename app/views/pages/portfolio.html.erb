@@ -57,8 +57,75 @@ $(document).ready(function() {
     <!-- SECTION CONTENT -->
     <section class="section-content py-5">
             
+            <!--<img src="/assets/port.jpg" style="background-size: cover;   background-position: center; padding-bottom: 80px; width: 100%;"/>-->
+        
         <article id="welcome">
-            <img src="/assets/port.jpg" style="background-size: cover;   background-position: center; padding-bottom: 80px; width: 100%;"/>
+            <main>
+                <section class="content content--full flexy flexy--row">
+                    <h2 class="content__title content__title--medium content__title--half content__title--right">
+                        <div id="rev-4" class="content__title__inner">funky foxes love</div><br/>
+                        <div id="rev-5" class="content__title__inner content__title__inner--offset-2">technology</div>
+                    </h2>
+                    <div id="rev-3" class="content__image-wrap content__image-wrap--half">
+                        <img class="content__image" src="assets/1.jpg" alt="Some image"/>
+                    </div>
+                </section>
+            </main>
+            
+            <!--JS-->
+            <script src="/assets/anime.min.js"></script>
+            <script src="/assets/scrollMonitor.js"></script>
+            <script src="/assets/main.js"></script>
+            <script>
+            (function() {
+                // Fake loading.
+                setTimeout(init, 1);
+
+                function init() {
+                    document.body.classList.remove('loading');
+
+                    //reveal on scroll *
+                    var scrollElemToWatch_1 = document.getElementById('rev-3'),
+                        watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),
+                        rev3 = new RevealFx(scrollElemToWatch_1, {
+                            revealSettings : {
+                                bgcolor: '#fcf652',
+                                direction: 'rl',
+                                onCover: function(contentEl, revealerEl) {
+                                    contentEl.style.opacity = 1;
+                                }
+                            }
+                        }),
+                        rev4 = new RevealFx(document.querySelector('#rev-4'), {
+                            revealSettings : {
+                                bgcolor: '#7f40f1',
+                                delay: 250,
+                                onCover: function(contentEl, revealerEl) {
+                                    contentEl.style.opacity = 1;
+                                }
+                            }
+                        }),
+                        rev5 = new RevealFx(document.querySelector('#rev-5'), {
+                            revealSettings : {
+                                bgcolor: '#7f40f1',
+                                delay: 500,
+                                onCover: function(contentEl, revealerEl) {
+                                    contentEl.style.opacity = 1;
+                                }
+                            }
+                        });
+
+
+                    watcher_1.enterViewport(function() {
+                        rev3.reveal();
+                        rev4.reveal();
+                        rev5.reveal();
+                        watcher_1.destroy();
+                    });
+
+
+            }})();
+            </script>
         </article>
 
 <div class="container">

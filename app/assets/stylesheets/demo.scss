@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+@keyframes loaderAnim {
+	to {
+		transform: translate3d(0,-100px,0);
+	}
+}
+
+/* Content */
+.content {
+	position: relative;
+	min-height: 300px;
+	overflow-x: hidden;
+}
+
+.content--full {
+	height: 100vh;
+	min-height: 600px;
+}
+
+.flexy {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flexy--center {
+    justify-content: center;
+}
+
+.flexy--row {
+	flex-direction: row;
+}
+
+.content__heading {
+	flex: none;
+	width: 100%;
+	padding: 0 5vw;
+}
+
+.content__heading--center {
+	text-align: center;
+}
+
+.content__title {
+	font-size: 8vw;
+	line-height: 1.2;
+	padding: 0 5vw;
+}
+
+.content__title--half {
+	width: 50vw;
+	z-index: 2;
+}
+
+.content__title--enclosed {
+	padding: 0;
+	margin: 0;
+}
+
+.content__title--center {
+	margin: auto;
+}
+
+.content__title--right {
+	text-align: right;
+	padding: 0 0 0 2em;
+}
+
+.content__title--left {
+	margin-left: -18vw;
+}
+
+.content__title--medium  {
+	font-size: 6vw;
+}
+
+.content__title--small  {
+	font-size: 2vw;
+}
+
+.content__title__inner {
+	flex: none;
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+}
+
+.content__title__inner--offset-1 {
+	top: -0.25em;
+	left: 13.6vw;
+}
+
+.content__title__inner--offset-2 {
+	top: -0.25em;
+	left: 1.75vw;
+}
+
+.content__title__inner--offset-3 {
+	left: -10vw;
+	top: -0.25em;
+}
+
+.content__image-wrap {
+	flex: none;
+	width: 25vw;
+}
+
+.content__image-wrap--half {
+	width: 50vw;
+}
+
+.content__image {
+	width: 100%;
+	display: block;
+}
+
+/* Related demos */
+.content--related {
+	padding: 8em 5vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content--related h2 {
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.25em;
+}
+
+.content--related .demos {
+	padding-bottom: 3em;
+}
+
+
+@media screen and (max-width: 56.250em) {
+	.btn--tool {
+		font-size: 3vw;
+	}
+	.media__toolbar {
+		padding: 3.5vw;
+	}
+}
+
+@media screen and (max-width: 50em) {
+	.codrops-header__title,
+	.codrops-header__tagline {
+		width: 100%;
+		padding: 1em 0 0;
+	}
+	.content--full {
+		min-height: 0;
+	}
+	.content__title {
+		font-size: 2em;
+	}
+	.content__title--medium  {
+		font-size: 1.75em;
+	}
+	.content__title--small {
+		font-size: 1.15em;
+	}
+	.content__title--half {
+		width: 100%;
+	}
+	.content__title--right {
+		padding: 0 5vw;
+	}
+	.content__title--left {
+		margin-left: 0;
+	}
+	.flexy--row {
+	    flex-direction: column;
+	}
+}
+
