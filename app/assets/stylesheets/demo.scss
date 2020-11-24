@@ -9,11 +9,6 @@ html, body {
 	overflow-x: hidden;
 }
 
-@keyframes loaderAnim {
-	to {
-		transform: translate3d(0,-100px,0);
-	}
-}
 
 /* Content */
 .content {
@@ -32,6 +27,7 @@ html, body {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+	//background: light;
 }
 
 .flexy--center {
@@ -74,7 +70,7 @@ html, body {
 
 .content__title--right {
 	text-align: right;
-	padding: 0 0 0 2em;
+	padding: 0 0 0 3.5em;
 }
 
 .content__title--left {
@@ -82,7 +78,7 @@ html, body {
 }
 
 .content__title--medium  {
-	font-size: 6vw;
+	font-size: 5vw;
 }
 
 .content__title--small  {
@@ -94,6 +90,14 @@ html, body {
 	display: inline-block;
 	white-space: nowrap;
 	position: relative;
+	font-family: 'Source Serif Pro', serif;
+	color: #77696c;
+	//border-color: #e18455;
+	//font-weight: bold;
+}
+
+.content__title__inner__bg {
+	background: red;
 }
 
 .content__title__inner--offset-1 {
@@ -104,11 +108,7 @@ html, body {
 .content__title__inner--offset-2 {
 	top: -0.25em;
 	left: 1.75vw;
-}
-
-.content__title__inner--offset-3 {
-	left: -10vw;
-	top: -0.25em;
+	margin-left: 10vw;
 }
 
 .content__image-wrap {
@@ -137,9 +137,6 @@ html, body {
 	font-size: 1.25em;
 }
 
-.content--related .demos {
-	padding-bottom: 3em;
-}
 
 
 @media screen and (max-width: 56.250em) {
