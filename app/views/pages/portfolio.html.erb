@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script type="text/javascript">
 
 // jquery ready start
@@ -68,7 +69,7 @@ $(document).ready(function() {
                         <div id="rev-5" class="content__title__inner content__title__inner--offset-2">web developer</div>
                     </h2>
                     <div id="rev-3" class="content__image-wrap content__image-wrap--half">
-                        <img class="content__image" src="assets/mac.jpg" alt="Some image"/>
+                        <img class="content__image" src="assets/note.jpg" alt="Some image"/>
                     </div>
                 </section>
             </main>
@@ -80,7 +81,7 @@ $(document).ready(function() {
             <script>
             (function() {
                 // Fake loading.
-                setTimeout(init, 1);
+                setTimeout(init, 100);
 
                 function init() {
                     document.body.classList.remove('loading');
@@ -159,8 +160,7 @@ $(document).ready(function() {
                     <figure class="image-skill">
                         <img class="icon-skill" src="/assets/backend.svg"/>
                         <h1 class="h1skill">Back-end<h1>
-                        <p class="p-skill">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p class="p-skill">I value application architecture, problem solving and thoughtful interaction. I love the feeling of being building something. Even if it's in the virtual realm.
                         </p>   
                         <p class="p1-skill">Dev Tools Back:</p>  
                         <li class="li-skill">Ruby</li>
@@ -168,6 +168,8 @@ $(document).ready(function() {
                         <li class="li-skill">Javascript</li>
                         <li class="li-skill">Github</li>
                         <li class="li-skill">Gitlab</li>
+                        <li class="li-skill">Terminal</li>
+                        <li class="li-skill">Codepen</li>
                     </figure>
                 </div>
 
@@ -175,8 +177,7 @@ $(document).ready(function() {
                     <figure class="image-skill">
                         <img class="icon-skill" src="/assets/front-end.svg"/>
                         <h1 class="h1skill">Front-end<h1>
-                        <p class="p-skill">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p class="p-skill">I like to code things from scratch, to straddle between design and data. My goal is to make data sexy in order to bring color and glitter into the lives of users.
                         </p>
                         <p class="p1-skill">Dev Tools Front:</p>
                         <li class="li-skill">HTML</li>
@@ -184,6 +185,8 @@ $(document).ready(function() {
                         <li class="li-skill">Sass</li>
                         <li class="li-skill">Bootstrap</li>
                         <li class="li-skill">Spectre.CSS</li>
+                        <li class="li-skill">Codepen</li>
+                        <li class="li-skill">Bitbucket</li>
                     </figure>
                 </div>
 
@@ -191,15 +194,16 @@ $(document).ready(function() {
                     <figure class="image-skill">
                         <img class="icon-skill" src="/assets/swift.svg"/>
                         <h1 class="h1skill">Swift iOS <h1>
-                        <p class="p-skill">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p class="p-skill">The discovery of swift was a magical experience for me. I quickly fell under the spell of its elegance. I love the multitude of potentialities offered by this language.
                         </p>
                         <p class="p1-skill">Design Tools:</p>
-                        <li class="li-skill">Apps ios</li>
-                        <li class="li-skill">UX</li>
-                        <li class="li-skill">UI</li>
                         <li class="li-skill">Figma</li>
                         <li class="li-skill">Marvel</li>
+                        <li class="li-skill">UX</li>
+                        <li class="li-skill">UI</li>
+                        <li class="li-skill">Xcode</li>
+                        <li class="li-skill">Swift playgrounds</li>
+                        <li class="li-skill">App ios</li>
                     </figure>
                 </div>
             </div>
@@ -221,12 +225,12 @@ $(document).ready(function() {
                         <div class="col-sm-4">
                             <div class="cards" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal">
                                 <a>
-                                    <%= link_to show_path(page) do %>
+                                    <%= link_to project_path(page) do %>
                                         <figure class="hover-img">
                                             <div class="card-category" style="background-image: url(<%= page.image %>)"></div>
                                     <% end %>
                                 </a>
-                                    <%= link_to show_path(page), class:"title" do %>
+                                    <%= link_to project_path(page), class:"title" do %>
                                         <div class="title">
                                             <figcaption class=""><%= page.title %><figcaption>
                                         </div>

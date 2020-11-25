@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     def home
     end
 
-    def show
+    def project
         @page = Page.find(params[:id])
     end
     
@@ -12,12 +12,6 @@ class PagesController < ApplicationController
 
     def portfolio
         @pages = Page.all
-    end
-
-    def about
-    end
-
-    def contact
     end
 
     private
