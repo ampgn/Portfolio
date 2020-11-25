@@ -2,6 +2,7 @@
   "name": "portfolio",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "^4.2.0",
     "bootstrap": "^4.5.3",
     "turbolinks": "^5.2.0",
     "typed.js": "^2.0.11"
