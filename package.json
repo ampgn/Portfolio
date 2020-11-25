@@ -5,5 +5,8 @@
     "bootstrap": "^4.5.3",
     "turbolinks": "^5.2.0",
     "typed.js": "^2.0.11"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
   }
 }
