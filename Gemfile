@@ -11,6 +11,7 @@ group :production do
   gem 'pg'
 end
 
+gem 'webpacker'
 gem 'rails_12factor'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
