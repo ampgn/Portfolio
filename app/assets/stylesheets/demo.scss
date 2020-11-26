@@ -20,10 +20,11 @@ html, body {
 	position: relative;
 	min-height: 100px;
 	overflow-x: hidden;
+	margin-bottom: 30px;
 }
 
 .content--full {
-	height: 100vh;
+	height: 50vh;
 	min-height: 600px;
 }
 
@@ -142,7 +143,6 @@ html, body {
 	padding-bottom: 3em;
 }
 
-
 @media screen and (max-width: 56.250em) {
 	.btn--tool {
 		font-size: 3vw;
@@ -164,8 +164,8 @@ html, body {
 	}
 	.content__title {
 		font-size: 2em;
-		margin-top: 25vw;
-		margin-bottom: 5vw;
+		margin-top: 15vw;
+		margin-bottom: 3vw;
 	}
 	.content__title--medium  {
 		font-size: 1.75em;
@@ -178,9 +178,15 @@ html, body {
 	}
 	.content__title--right {
 		padding: 0 5vw;
+		margin-bottom: 30px;
+		text-align: center;
 	}
 	.content__title--left {
 		margin-left: 0;
+	}
+	.content__title__inner--offset-2 {
+		margin-left: 0vw;
+		text-align: center;
 	}
 	.flexy--row {
 	    flex-direction: column;

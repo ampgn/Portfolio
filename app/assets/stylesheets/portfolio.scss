@@ -190,3 +190,21 @@ figure {
   margin-top: 15px;
   letter-spacing: 1px;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+  .logo img {
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    transform: translateX(-242%);
+    margin-top: 2px;
+  }
+
+  .navbar-light .navbar-toggler {
+    border: none;
+    padding: 0;
+  }
+}
