@@ -206,6 +206,9 @@ figure {
     border: none;
     padding: 0;
   }
+  .nav {
+    flex-direction: column;
+  }
   .intro {
     font-size: 15px;
     text-align: center;
