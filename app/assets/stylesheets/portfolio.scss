@@ -202,9 +202,40 @@ figure {
     transform: translateX(-242%);
     margin-top: 2px;
   }
-
   .navbar-light .navbar-toggler {
     border: none;
     padding: 0;
+  }
+  .intro {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .dev {
+    margin-top: 30px;
+    font-size: 17px;
+  }
+  .icon-skill {
+    margin-top: 80px;
+  }
+  .about img {
+    transform: translateX(31%);
+  }
+  .footer {
+    padding: 0 !important;
+    height: 130px !important;
+    justify-content: center !important;
+    margin-top: -26px !important;
+    margin-bottom: 0 !important;
+  }
+  .footer-copyright {
+    transform: translateY(-70%);
+    float: left !important;
+    position: absolute;
+  }
+  .footer-links {
+    position: relative;
+    top: 20px;
+    size: 10px;
   }
 }
