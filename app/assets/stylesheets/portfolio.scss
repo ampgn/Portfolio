@@ -191,7 +191,10 @@ figure {
   letter-spacing: 1px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+@media screen  
+  and (min-device-width: 280px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
   .logo img {
     height: 53px;
     width: 53px;
@@ -235,19 +238,40 @@ figure {
   }
   .footer {
     padding: 0 !important;
-    height: 130px !important;
+    height: 110px !important;
     justify-content: center !important;
     margin-top: -26px !important;
     margin-bottom: 0 !important;
   }
   .footer-copyright {
-    transform: translateY(-70%);
+    transform: translateY(-60%);
     float: left !important;
     position: absolute;
   }
   .footer-links {
     position: relative;
     top: 20px;
-    size: 10px;
   }
+  .footer-links a {
+    font-size: 18px !important;
+  }
+}
+
+/* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 800px) {
+  /* Smaller Resolution Desktops and Laptops */
+  
+}
+@media (max-width: 650px) {
+  /* Smaller devices */
+  
+}
+@media (max-width: 450px) {
+  /* Even Smaller devices */
+  
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Even Smaller devices */
+  
 }
