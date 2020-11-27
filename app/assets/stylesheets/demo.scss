@@ -24,7 +24,7 @@ html, body {
 }
 
 .content--full {
-	height: 50vh;
+	height: 70vh;
 	min-height: 600px;
 }
 
@@ -153,13 +153,16 @@ html, body {
 }
 
 @media screen and (max-width: 50em) {
+	.content__image-wrap--half {
+		width: 100%;
+	}
 	.codrops-header__title,
 	.codrops-header__tagline {
 		width: 100%;
 		padding: 1em 0 0;
 	}
 	.content--full {
-		min-height: 0;
+		min-height: 0 !important;
 		font-size: 4vw;
 	}
 	.content__title {
