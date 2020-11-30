@@ -79,13 +79,6 @@
   color:#c4c4c4;
 }
 
-/*.linefooter {
-  width: 15%;
-  height: 5px;
-  border-color: #025ACB;
-  background-color: #025ACB;
-}*/
-
 figure {
   display: flex;
   flex-flow: column;
@@ -202,7 +195,6 @@ figure {
       display: block;
       float: left !important;
       text-indent: -9999px;
-      transform: translateX(-260%);
       margin-top: 2px;
     }
     .navbar-light .navbar-toggler {
@@ -230,9 +222,6 @@ figure {
     .icon-skill {
       margin-top: 80px;
     }
-    .about img {
-      transform: translateX(31%);
-    }
     .project {
       transform: translateX(-2.4%);
     }
@@ -240,7 +229,6 @@ figure {
       padding: 0 !important;
       height: 110px !important;
       justify-content: center !important;
-      margin-top: -26px !important;
       margin-bottom: 0 !important;
     }
     .footer-copyright {
@@ -258,6 +246,35 @@ figure {
 }
 
 @media only screen 
+  and (min-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .showpresentationter {
+      text-align: center;
+    }
+}
+
+@media only screen  
+  and (min-device-width: 540px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .navbar-light .navbar-toggler {
+      border: none;
+      padding: 0;
+    }
+    .project {
+      transform: translateX(-1.1%);
+    }
+    .intro {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 35px;
+    }
+    .dev {
+      margin-top: 30px;
+    }
+
+}
+
+@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -268,7 +285,6 @@ figure {
       display: block;
       float: left !important;
       text-indent: -9999px;
-      transform: translateX(-600%);
       margin-top: 2px;
     }
     .navbar-light .navbar-toggler {
@@ -291,10 +307,6 @@ figure {
     }
     .about img {
       height: auto;
-    }
-    .icon-skill {
-      margin-left: 87px;
-      margin-top: 100px;
     }
    .card-category {
     height: 140px;
