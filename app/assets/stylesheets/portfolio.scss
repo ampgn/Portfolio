@@ -285,6 +285,10 @@ figure {
     .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
       line-height: 1.5em;
     }
+    .content--full {
+      min-height: 0 !important;
+      font-size: 2.8vw;
+    }
     .about img {
       height: auto;
     }
@@ -293,7 +297,7 @@ figure {
       margin-top: 100px;
     }
    .card-category {
-    height: 160px;
+    height: 140px;
    }
    .p2-skill {
       margin-bottom: 80px;
