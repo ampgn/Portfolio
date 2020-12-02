@@ -275,8 +275,7 @@ figure {
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+  and (min-device-width: 768px)  
   and (-webkit-min-device-pixel-ratio: 1) {
     .logo img {
       height: 53px;
@@ -286,20 +285,6 @@ figure {
       float: left !important;
       text-indent: -9999px;
       margin-top: 2px;
-    }
-    .navbar-light .navbar-toggler {
-      border: none;
-      padding: 0;
-    }
-    .nav {
-      flex-direction: column;
-      margin-top: 50px;
-      text-align: center;
-      height: 50vh;
-      font-size: 24px;
-    }
-    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-      line-height: 1.5em;
     }
     .content--full {
       min-height: 0 !important;
@@ -316,5 +301,34 @@ figure {
    }
    .intro {
      margin-top: 0;
+     text-align: left;
    }
 }
+
+@media only screen 
+  and (min-device-width: 1024px)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .intro {
+    font-size: 20px;
+    text-align: left;
+  }
+  .dev {
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  .skills2 {
+    box-shadow: 0 3px 2px -2px #d0826f !important;
+  }
+}
+
+/*@media only screen 
+  and (min-device-width: 1280px)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .content__image-wrap--half {
+      width: 52vw;
+    }
+    .content__title--half {
+      width: 42vw;
+      z-index: 2;
+    }
+}*/

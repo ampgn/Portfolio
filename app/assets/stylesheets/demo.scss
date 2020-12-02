@@ -150,6 +150,10 @@ html, body {
 	.media__toolbar {
 		padding: 3.5vw;
 	}
+	.content--full {
+		height: 100vh;
+		min-height: 600px;
+	}
 }
 
 @media screen and (max-width: 50em) {
