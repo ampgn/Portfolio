@@ -58,78 +58,32 @@ $(document).ready(function() {
 
     <!-- SECTION CONTENT -->
     <section class="section-content py-5">
-            
-            <!--<img src="/assets/port.jpg" style="background-size: cover;   background-position: center; padding-bottom: 80px; width: 100%;"/>-->
         
         <!-- welcome -->
         <article id="welcome">
-            <main>
-                <section class="content content--full flexy flexy--row">
-                    <h2 class="content__title content__title--medium content__title--half content__title--right">
-                        <div id="rev-4" class="content__title__inner">Annie Puygrenier
-</div><br/>
-                        <div id="rev-5" class="content__title__inner content__title__inner--offset-2">web developer</div>
-                    </h2>
-                    <div id="rev-3" class="content__image-wrap content__image-wrap--half">
-                        <img class="content__image" src="assets/note.jpg" alt="Some image"/>
-                    </div>
-                </section>
-            </main>
+
+            <div class="container home">
+                <div class="row justify-content-center">
+                    <div class="col-12 ">
+                        <div class="logobis" style="text-align: center;">
+                            <img src="/assets/0.jpeg" class="mx-auto d-block img-fluid"/>
+                        <h1 class="h1home">Annie Puygrenier</h1>
+                        <span id="typed"></span>
+                        <script>
+                        var options = {
+                            strings: ["I'm a full-stack Web Developer"],
+                            typeSpeed: 50,
+                            loop: true
+                        }
+                        var typed = new Typed("#typed", options);
+                        </script>
+                        </div>
+                    <div>
+                <div>
+            </div>
             
-            <!-- Custom scripts for this template -->
-            <script src="/assets/anime.min.js"></script>
-            <script src="/assets/scrollMonitor.js"></script>
-            <script src="/assets/main.js"></script>
-            <script>
-            (function() {
-                // Fake loading.
-                setTimeout(init, 100);
+			<!--bgcolor: '#cca995'-->
 
-                function init() {
-                    document.body.classList.remove('loading');
-
-                    //reveal on scroll *
-                    var scrollElemToWatch_1 = document.getElementById('rev-3'),
-                        watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),
-                        rev3 = new RevealFx(scrollElemToWatch_1, {
-                            revealSettings : {
-                                bgcolor: '#cca995',
-                                direction: 'rl',
-                                onCover: function(contentEl, revealerEl) {
-                                    contentEl.style.opacity = 1;
-                                }
-                            }
-                        }),
-                        rev4 = new RevealFx(document.querySelector('#rev-4'), {
-                            revealSettings : {
-                                bgcolor: '#c46e28',
-                                delay: 250,
-                                onCover: function(contentEl, revealerEl) {
-                                    contentEl.style.opacity = 1;
-                                }
-                            }
-                        }),
-                        rev5 = new RevealFx(document.querySelector('#rev-5'), {
-                            revealSettings : {
-                                bgcolor: '#d2836f',
-                                delay: 500,
-                                onCover: function(contentEl, revealerEl) {
-                                    contentEl.style.opacity = 1;
-                                }
-                            }
-                        });
-
-
-                    watcher_1.enterViewport(function() {
-                        rev3.reveal();
-                        rev4.reveal();
-                        rev5.reveal();
-                        watcher_1.destroy();
-                        
-                    });
-                    
-            }})();
-            </script>
         </article>
 
 <div class="container">
@@ -139,15 +93,16 @@ $(document).ready(function() {
             <div> 
                 <h1 class="h1portfolio" href="./welcome">About Me</h1>
             </div>
+    
             <div class="row justify-content-center">
-                <div class="col-md-4 col-12 about">
-                    <img src="/assets/0.jpeg" class="mx-auto d-block img-fluid"/>
+                <div class="col-md-4 col-12 about block-effect" style="--td: 1.2s">
+                    <img src="/assets/ME.jpg" class="mx-auto d-block img-fluid" style="--bc: #c46e28; --d: .1s"/>
                 </div>
-                <div class="col-md-5 col-12 about">
-                    <p class="intro">I'm a junior full-stack web & mobile developer based in Aix-en-Provence, France.</p>
-                    <p class="dev">I enjoy turning complex problems into simple, beautiful and intuitive designs.
-                    <br> When, I'm not coding, lisning music or looking series, you'll find me writing, designing or going shopping.</p>
-                   <p class="dev"> If you are looking for a designer & user interface developer for contract, feel free to reach out.</p>
+                <div class="col-md-5 col-12 about block-effect" style="--td: 1.2s">
+                    <p class="intro" style="--bc: #c46e28; --d: .1s">I'm a junior full-stack web & mobile developer based in Aix-en-Provence, France.</p>
+                    <p class="dev" style="--bc: #d2836f; --d: .5s">I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                    <br> When, I'm not coding, lisning music or looking series, you'll find me writing, designing or going shopping.<br><br>
+                    If you are looking for a designer & user interface developer for contract, feel free to reach out.</p>
                 </div>
             </div>
         </div>

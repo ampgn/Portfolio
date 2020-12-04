@@ -16,4 +16,3 @@
 //= require_tree .
 
 // Wrap every letter in a span
-

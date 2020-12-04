@@ -211,6 +211,28 @@ figure {
     .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
       line-height: 1.5em;
     }
+    .logobis img{
+      margin-bottom: 15px;
+    }
+    .home {
+      margin-bottom: 290px;
+    }
+    .h1home {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: large;
+      color: #e96e58;
+      font-weight: 600;
+      font-size: 25px;
+      letter-spacing: 4px;
+    }
+    #typed {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: large;
+      padding-bottom: 30px;
+      color: #d09263;
+      font-weight: 600;
+      font-size: 25px;
+    }
     .intro {
       font-size: 18px;
       text-align: center;
@@ -290,9 +312,6 @@ figure {
       min-height: 0 !important;
       font-size: 2.8vw;
     }
-    .about img {
-      height: auto;
-    }
    .card-category {
     height: 140px;
    }
@@ -335,3 +354,4 @@ figure {
       z-index: 2;
     }
 }*/
+

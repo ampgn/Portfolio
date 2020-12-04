@@ -8,13 +8,10 @@
   height: 72px;
   width: 72px;
   border-radius: 50%;
-  margin-bottom: 1px;
-  margin-top: 35vh;
-  transform: translateY(-35%);
+  margin-bottom: 2px;
+  margin-top: 33vh;
 }
 
-/*<h1 class="h1home">Hi, i'm Annie Puygrenier</h1>
-<h2 class="h2home">I'm a full-stack web developer</h2>*/
 .h1home {
   font-family: 'Cormorant Garamond', serif;
   font-size: large;
@@ -23,11 +20,6 @@
   font-size: 50px;
   letter-spacing: 5px;
 }
-
-/*.h2home {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: small;
-}*/
 
 #buttonhome {
   color: #d9492f;
@@ -55,6 +47,7 @@
   text-align: center;
   justify-content: center;
   vertical-align: middle !important;
+  margin-bottom: 250px;
 }
 
 
