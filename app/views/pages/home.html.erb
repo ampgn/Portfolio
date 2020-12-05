@@ -1,23 +1,25 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-<div class="container home">
-    <div class="logobis" style="text-align: center;">
-        <img src="/assets/0.jpeg" class="img-fluid"/>
-        <h1 class="h1home">Annie Puygrenier</h1>
-        <span id="typed"></span>
-        <script>
-            var options = {
-                strings: ["I'm a full-stack Web Developer"],
-                typeSpeed: 50,
-                loop: true
-            }
-            var typed = new Typed("#typed", options);
-        </script>
-    </div>
-    <div class="col text-center">
-        <a class="btn btn-outline-light homebutton" id="buttonhome" href="./portfolio" style="text-align: center;">View my work</a>
-    </div>
+<div class="container home d-flex vh-100">
+    <div class="row justify-content-center align-self-center">
+        <div class="col-12">
+            <div class="logobis" style="text-align: center;">
+                <img src="/assets/0.jpeg" class="mx-auto d-block img-fluid"/>
+                <h1 class="h1home">Annie Puygrenier</h1>
+                <span id="typed"></span>
+                <script>
+                var options = {
+                    strings: ["I'm a full-stack Web Developer"],
+                    typeSpeed: 50,
+                    loop: true
+                }
+                var typed = new Typed("#typed", options);
+                </script>
+            </div>
+        <div>
+        <div class="col text-center">
+            <a class="btn btn-outline-light homebutton" id="buttonhome" href="./portfolio" style="text-align: center;">View my work</a>
+        </div>
+    <div>
 </div>
-
-
 
