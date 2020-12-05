@@ -17,14 +17,12 @@
 
 .intro {
     text-align: justify;
+    margin-top: -5px;
     --t: calc(var(--td) + var(--d));
-
     color: transparent;
     padding: 4px;
-  
     position: relative;
     overflow: hidden;
-  
     animation: revealBlock 0s var(--t) forwards;
 }
 .intro::after {
@@ -33,11 +31,9 @@
     width: 0%;
     height: 100%;
     padding-bottom: 4px;
-  
     position: absolute;
     top: 0;
     left: 0;
-  
     background: var(--bc);
     animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
 }
@@ -49,25 +45,20 @@
     font-weight: lighter;
     font-size: 18px;
     --t: calc(var(--td) + var(--d));
-
     color: transparent;
     padding: 4px;
-  
     position: relative;
     overflow: hidden;
-  
-    animation: revealBlock 0s var(--t) forwards;
+    animation: devBis 0s var(--t) forwards;
 }
 .dev::after {
     content: '';
     width: 0%;
     height: 100%;
     padding-bottom: 4px;
-  
     position: absolute;
     top: 0;
     left: 0;
-  
     background: var(--bc);
     animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
 }
@@ -136,8 +127,14 @@
 /* animations */
 @keyframes revealBlock {
   100% {
-    color: black;
+    color: #d28470;
   }
+}
+
+@keyframes devBis {
+    100% {
+      color: black;
+    }
 }
 
 @keyframes revealingIn {
@@ -161,4 +158,59 @@
     transform: translateX(100%);
   }
 
+}
+
+.reveal-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: reveal-doggo 1000ms cubic-bezier(0.5, 1, 0.2, 1) forwards;
+}
+
+.reveal-box {
+    position: relative;
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+.reveal-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #cca995;
+    animation: reveal-block 1800ms cubic-bezier(0.5, 1, 0.2, 1) forwards;
+    z-index: 4;
+}
+
+@keyframes reveal-block {
+    0% {
+        left: 0%;
+        width: 0%;
+    }
+
+    50% {
+        left: 0%;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+@keyframes reveal-doggo {
+
+    0% {
+        left: 0%;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
 }

@@ -215,14 +215,14 @@ figure {
       margin-bottom: 15px;
     }
     .home {
-      margin-bottom: 290px;
+      margin-bottom: 320px;
     }
     .h1home {
       font-family: 'Cormorant Garamond', serif;
       font-size: large;
       color: #e96e58;
       font-weight: 600;
-      font-size: 25px;
+      font-size: 26px;
       letter-spacing: 4px;
     }
     #typed {
@@ -231,7 +231,7 @@ figure {
       padding-bottom: 30px;
       color: #d09263;
       font-weight: 600;
-      font-size: 25px;
+      font-size: 22px;
     }
     .intro {
       font-size: 18px;
@@ -308,13 +308,12 @@ figure {
       text-indent: -9999px;
       margin-top: 2px;
     }
-    .content--full {
-      min-height: 0 !important;
-      font-size: 2.8vw;
-    }
    .card-category {
     height: 140px;
    }
+   .skills2 {
+    box-shadow: 0 3px 2px -2px #d0826f !important;
+  }
    .p2-skill {
       margin-bottom: 80px;
    }
