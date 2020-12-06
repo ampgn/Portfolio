@@ -4,12 +4,11 @@
   border-radius: 50%;
 }
 
-.logobis img{
+.logobis img {
   height: 72px;
   width: 72px;
   border-radius: 50%;
   margin-bottom: 5px;
-  //margin-top: 33vh;
 }
 
 .h1home {
@@ -19,19 +18,21 @@
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 3px;
+  margin-top: -50px;
 }
 
 #buttonhome {
   color: #d9492f;
   opacity: 0.70;
-  border-color: #d09263;
+  border-color: #d9492f;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   font-size: small;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 #buttonhome:hover {
-  background-color: #fefcf7;
+  background-color: #d9492f;
+  color: white;
 }
 
 #typed {
@@ -47,7 +48,6 @@
   text-align: center;
   justify-content: center;
   vertical-align: middle !important;
-  //margin-bottom: 250px;
 }
 
 
