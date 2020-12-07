@@ -1,8 +1,5 @@
 class PagesController < ApplicationController
     
-    def home
-    end
-
     def project
         @page = Page.find(params[:id])
     end
