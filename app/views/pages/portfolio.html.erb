@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 <div class="loading">
     <!-- Navigation -->
-    <div>
+    <div id="wrap">
     <nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white" style="z-index: 3;">
         <a class="navbar-brand d-none d-lg-block" href="#">        
             <%= link_to root_path, class: "navbar-nav mr-auto logo" do %>
@@ -61,8 +61,8 @@ $(document).ready(function() {
             
             <!-- welcome -->
             <article id="welcome">
-
-                <div id="wrap" class="container home d-flex vh-100">
+                
+                <div id="" class="container home d-flex vh-100">
                     <div class="row justify-content-center align-self-center">
                         <div class="col-12">
                             <div class="logobis" style="text-align: center;">
@@ -82,9 +82,10 @@ $(document).ready(function() {
                             <a class="btn btn-outline-light homebutton scrollto" id="buttonhome" href="#portfolio" style="text-align: center;">View my work</a>
                         </div>
                     <div>
+                
                 </div>
             </article>
-
+    </div>
     <div class="container">
             <!-- About me -->
             <article id="about">
@@ -275,14 +276,14 @@ $(document).ready(function () {
 
       var color =
         "background: rgb(" +
-        getRandomInt(0, 224) +
+        getRandomInt(0, 255) +
         "," +
-        getRandomInt(0, 224) +
+        getRandomInt(0, 255) +
         "," +
-        getRandomInt(0, 224) +
+        getRandomInt(0, 255) +
         ");";
 
-      var sizeInt = getRandomInt(1, 3);
+      var sizeInt = getRandomInt(3, 5);
       size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
 
       var left =
@@ -307,6 +308,7 @@ $(document).ready(function () {
     }
   }, 1);
 });
+
 </script>
 
 <%= render 'shared/footer' %>
